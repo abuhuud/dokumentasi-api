@@ -1,0 +1,242 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Task Management
+  contact: {}
+host: localhost
+basePath: /arkatama-rest-server/api
+securityDefinitions: {}
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /taskcategory:
+    get:
+      summary: GET Task Category
+      tags:
+      - Task Categories
+      operationId: GETTaskCategory
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    delete:
+      summary: DEL Task Category
+      tags:
+      - Task Categories
+      operationId: DELTaskCategory
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: id
+        in: formData
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    post:
+      summary: POST Task Category
+      tags:
+      - Task Categories
+      operationId: POSTTaskCategory
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: name
+        in: formData
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    put:
+      summary: PUT Task Category
+      tags:
+      - Task Categories
+      operationId: PUTTaskCategory
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: id
+        in: formData
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: name
+        in: formData
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /task:
+    get:
+      summary: GET Tasks
+      tags:
+      - Tasks
+      operationId: GETTasks
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    delete:
+      summary: DEL Tasks
+      tags:
+      - Tasks
+      operationId: DELTasks
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: id
+        in: formData
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    post:
+      summary: POST Tasks
+      tags:
+      - Tasks
+      operationId: POSTTasks
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: category_id
+        in: formData
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: title
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: description
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: start_date
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: finish_date
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: status
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: doc_url
+        in: formData
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    put:
+      summary: PUT Task
+      tags:
+      - Tasks
+      operationId: PUTTask
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: id
+        in: formData
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: category_id
+        in: formData
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: title
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: description
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: start_date
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: finish_date
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: status
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: doc_url
+        in: formData
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+tags:
+- name: Task Categories
+- name: Tasks

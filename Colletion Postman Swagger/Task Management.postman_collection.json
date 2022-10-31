@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "bdc711ed-78aa-4f16-8236-83ef35ed2297",
+		"name": "Task Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17861175"
+	},
+	"item": [
+		{
+			"name": "Task Categories",
+			"item": [
+				{
+					"name": "GET Task Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/arkatama-rest-server/api/taskcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"arkatama-rest-server",
+								"api",
+								"taskcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DEL Task Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/arkatama-rest-server/api/taskcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"arkatama-rest-server",
+								"api",
+								"taskcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Task Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Makan",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/arkatama-rest-server/api/taskcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"arkatama-rest-server",
+								"api",
+								"taskcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Task Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Keliling Dunia",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/arkatama-rest-server/api/taskcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"arkatama-rest-server",
+								"api",
+								"taskcategory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "GET Tasks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost/arkatama-rest-server/api/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"arkatama-rest-server",
+								"api",
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DEL Tasks",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/arkatama-rest-server/api/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"arkatama-rest-server",
+								"api",
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Tasks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Roma",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Nonton Layar Tancecp",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2022/11/20",
+									"type": "text"
+								},
+								{
+									"key": "finish_date",
+									"value": "2022/11/20",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "New",
+									"type": "text"
+								},
+								{
+									"key": "doc_url",
+									"type": "file",
+									"src": "/D:/Dokumen Penting/Akta Kelahiran Ikrom.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/arkatama-rest-server/api/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"arkatama-rest-server",
+								"api",
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Belajar Figma",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Belajar Dasar Figma",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2022/11/03",
+									"type": "text"
+								},
+								{
+									"key": "finish_date",
+									"value": "2022/11/04",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "New",
+									"type": "text"
+								},
+								{
+									"key": "doc_url",
+									"value": "gambar.jpeg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/arkatama-rest-server/api/task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"arkatama-rest-server",
+								"api",
+								"task"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
